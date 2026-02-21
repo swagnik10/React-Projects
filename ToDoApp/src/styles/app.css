@@ -1,0 +1,166 @@
+/* App Container */
+.app-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Heading */
+.app-container h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Wrapper */
+.todo-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+/* Input Field */
+.todo-input {
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.todo-input:focus {
+  border-color: #4f46e5;
+}
+
+/* Add / Update Button */
+.todo-submit {
+  padding: 10px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4f46e5;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.todo-submit:hover {
+  background-color: #4338ca;
+}
+
+/* Cancel Button (Edit Mode) */
+.todo-cancel {
+  padding: 10px 16px;
+  font-size: 14px;
+  border: 1px solid #e11d48;
+  border-radius: 6px;
+  background-color: white;
+  color: #e11d48;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.todo-cancel:hover {
+  background-color: #e11d48;
+  color: white;
+}
+
+/* Todo List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Single Item */
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.todo-item span {
+  flex: 1;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.todo-item span.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* Actions */
+.todo-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.edit-btn {
+  background-color: #facc15;
+  color: #fff;
+}
+
+.edit-btn:hover {
+  background-color: #eab308;
+}
+
+.delete-btn {
+  background-color: #ef4444;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background-color: #dc2626;
+}
+
+/* Empty message */
+.empty-msg {
+  color: #555;
+  font-style: italic;
+  padding: 10px 0;
+}
+
+/* Filter Bar */
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.filter-bar button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.filter-bar button:hover {
+  background-color: #f3f4f6;
+}
+
+.filter-bar button.active {
+  background-color: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
