@@ -1,0 +1,17 @@
+/* Make full height layout work */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+/* Global reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
