@@ -1,0 +1,49 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+}
+
+/* Light Theme (default) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111827;
+}
+
+/* Dark Theme */
+.dark {
+  --bg-color: #0f172a;
+  --text-color: #f9fafb;
+}
+
+/* Global App Styling */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Button Styling */
+.toggle-btn {
+  padding: 10px 18px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #2563eb;
+  color: white;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.toggle-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
